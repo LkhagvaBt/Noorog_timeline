@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Монголд бүртгэгдсэн шинэ коронавирусийн СЭЖИГТЭЙ ТОХИОЛДЛУУД</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #FF9F55;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      left: 50%;
+    }
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: white;
+      border: 4px solid #FF9F55;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .right::after {
+      left: -16px;
+    }
+    .content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: 600px) {
+      .timeline::after {
+        left: 31px;
+      }
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+      .left::after, .right::after {
+        left: 15px;
+      }
+      .right {
+        left: 0%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h2>Монголд бүртгэгдсэн шинэ коронавирусийн СЭЖИГТЭЙ ТОХИОЛДЛУУД</h2>
+<p>Эх сурвалж: <a href="https://ikon.mn/p/1su6">iKon.mn</a></p>
+
+<div class="timeline">
+  <!-- Example of a timeline entry -->
+  <div class="container left">
+    <div class="content">
+      <h3>2020.03.29</h3>
+      <p>Гуравдугаар сарын 29-нд ХӨСҮТ болон Монгол Улсын хэмжээнд коронавирусийн сэжигтэй тохиолдол бүртгэгдээгүй.</p>
+    </div>
+  </div>
+  <!-- Add more entries here following the same structure -->
+</div>
+
+</body>
+</html>
